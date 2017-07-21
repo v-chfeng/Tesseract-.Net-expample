@@ -1,1 +1,3 @@
 # Tesseract-.Net-expample
+
+unfinished!
