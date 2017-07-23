@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Magick.NET-Q16-AnyCPU, Version=7.0.0.0, Culture=neutral, PublicKeyToken=2004825badfa91ec, processorArchitecture=MSIL">
-      <HintPath>D:\CCache\Magick.NET-Q16-AnyCPU.7.0.6.102\lib\net40\Magick.NET-Q16-AnyCPU.dll</HintPath>
+      <HintPath>..\packages\Magick.NET-Q16-AnyCPU.7.0.6.102\lib\net40\Magick.NET-Q16-AnyCPU.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -53,13 +53,93 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="main.ilk">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
-    <None Include="PDF\input0.PDF">
+    <None Include="PDF\SLP-Com&amp;Lan-China United Network Communications Corp henan branch-7-LPU3O6U3A-SIGNED.PDF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="PDF\SLP-Com&amp;Lan-Pony Testing Co., Ltd.-7-MIRVKGM5L.PDF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="PDF\SLP-Com&amp;Lan-The central propaganda department public opinion information bureau-7-JZRYSKU7-SEALED.PDF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="PDF\SLP-Y75- China Telecom Corporation Limited - 7-M7AR4YWSJ.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="PDF\SLP-Y75-Accelink Technologies Co., Ltd.- 7-LMEWSYU3U.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="PDF\SLP-Y75-Beijing Shouhuan Cultural Tourism Investment Co.,Ltd.-7-LI4LRIN7B-sinoage 20160923.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="PDF\SLP-Y75-China Telecom Co Shaanxi branch-7-KMVGVE22R.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="PDF\SLP-Y75-Guangxi Automobile Group Co.,Ltd.-7-MFAZ2EGEV.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="PDF\SLP-Y75-Industrial Securities Co., Ltd.-7-NLJ3JRDNG.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="PDF\SLP-Y75-PICC LIFE INSURANCE COMPANY LIMITED-7-LYHVERCRT.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="PDF\SLP-Y75-Shanghai Shentong Metro Group Co.,Ltd -7-KNVHLKQRW-BJDC.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="PDF\SLP-Y75-Taishin Financial Leasing%28China%29 Co.,Ltd-7-NJQLXV26O.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="PDF\SLP-Y75-Yunnan Branch of China Telecom Corporation Limited-7-KMVH64TEB.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="PDF\SLP-Y75M197-East Environment Energy Technology Co, Ltd-7-MUUP5YCTA.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="PDF\Y75-Fuzhou Metro Co.Ltd.-7-NLAE4ONEM-NY-20170607.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="main.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="main.pdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pvt.cppan.demo.danbloomberg.leptonica-1.74.4.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pvt.cppan.demo.google.tesseract.libtesseract-master.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pvt.cppan.demo.jpeg-9.2.0.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pvt.cppan.demo.madler.zlib-1.2.11.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pvt.cppan.demo.openjpeg.openjp2-2.1.2.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pvt.cppan.demo.png-1.6.30.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pvt.cppan.demo.tiff-4.0.7.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pvt.cppan.demo.webp-0.6.0.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pvt.cppan.demo.xz_utils.lzma-5.2.3.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
