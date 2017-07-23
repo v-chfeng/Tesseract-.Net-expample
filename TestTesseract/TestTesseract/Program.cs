@@ -18,12 +18,19 @@ namespace TestTesseract
         {
             string[] files = Directory.GetFiles(".\\PDF\\", "*.pdf");
 
-            foreach (var str in files)
+            try
             {
-                if (PDFToImage(str))
+                foreach (var str in files)
                 {
-                    ImageToTxt(str);
+                    if (PDFToImage(str))
+                    {
+                        ImageToTxt(str);
+                    }
                 }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
             }
         }
 
@@ -44,10 +51,10 @@ namespace TestTesseract
                 foreach (MagickImage image in images)
                 {
                     // Write page to file that contains the page number
-                    image.Write(name + page + ".png");
+                    image.Write(".\\PDF\\" + name + page + ".png");
                     // Writing to a specific format works the same as for a single image
-                    image.Format = MagickFormat.Ptif;
-                    image.Write(name + page + ".tif");
+                    //image.Format = MagickFormat.Ptif;
+                    //image.Write(name + page + ".tif");
                     page++;
                 }
             }
@@ -55,8 +62,9 @@ namespace TestTesseract
             return true;
         }
 
-        static bool ImageToTxt(string imagePrefixName)
+        static bool ImageToTxt(string pdfname)
         {
+            string imagePrefixName = Path.GetFileName(pdfname);
             string[] pngFiles = Directory.GetFiles(".\\PDF\\", imagePrefixName + "*.png");
             string[] paras = new string[] { "demomain", @".\Data\input1.png", @".\output1.txt", "-l", "chi_sim", "--tessdata-dir", ".\\" };
 
